@@ -1,4 +1,3 @@
-
 # Vintiag Emporum
 
 Vintiag Emporium is a dynamic shopping website that allows users to shop for various products using API calls. The website leverages AJAX and jQuery to create a seamless shopping experience, and it uses local storage to manage cart items and user login details.
