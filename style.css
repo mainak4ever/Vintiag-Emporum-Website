@@ -1,0 +1,160 @@
+/* Banner Styles Css */
+.banner-container {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    margin-bottom: -20px;
+}
+
+.banner {
+    transition: transform 0.5s ease-in-out;
+}
+
+.banner-item {
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.btn-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: calc((100% /2) - 20px);
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.btn {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 1px;
+    box-sizing: 20px;
+}
+
+.left-btn {
+    position: absolute;
+    left: 10px;
+}
+
+.right-btn {
+    position: absolute;
+    right: 10px;
+}
+
+/* Preview Products Styles */
+#best-stamp {
+    position: absolute;
+    top: -40px;
+    left: 2.5%;
+    z-index: 1;
+}
+
+#best-stamp img {
+    width: 20%;
+    height: auto;
+}
+
+#clothing-section {
+    width: 100%;
+    height: auto;
+    background-image: url('./public/clothing-bg.jpg.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+#accessories-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url('./public/accessories-bg3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.preview-heading-container {
+    padding: 60px 0;
+}
+
+.preview-heading {
+    color: rgb(255, 255, 255);
+    margin: 0 30%;
+    padding: 30px 10px;
+    text-align: center;
+    border: 2px dashed #9b9b9b;
+    text-transform: uppercase;
+    /* font-family: Geogrotesque-SemiBold,sans-serif; */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4%;
+}
+
+.card {
+    width: 13%;
+    min-width: 200px;
+    height: auto;
+    margin: 4% 2%;
+    background-color: #222020da;
+    border-radius: 1px;
+
+}
+
+#clothingCards .card {
+    box-shadow: 2px 2px 6px rgba(97, 56, 2, 0.664);
+}
+
+#accessoriesCards .card {
+    box-shadow: 2px 2px 6px rgba(51, 32, 3, 0.664);
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card:hover {
+    opacity: .8
+        /* background-color: rgba(0, 0, 0, 0.13); */
+        /* box-shadow: 0 2px 10px rgba(255, 255, 255, 0.6); */
+}
+
+.card .preview-img img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.card .preview-details {
+    padding-left: 10px;
+    margin: 10px 5px;
+}
+
+.card .preview-details h3 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: rgb(255, 255, 255);
+}
+
+.card .preview-details h4 {
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgb(126, 125, 125);
+}
+
+.card .preview-details h5 {
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: rgb(172, 90, 15);
+}

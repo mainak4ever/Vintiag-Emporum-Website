@@ -1,0 +1,251 @@
+/* base.css */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+a {
+    color: black;
+    cursor: pointer;
+}
+
+/* Header Section css */
+#header {
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 8%;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#menu>a {
+    text-decoration: none;
+    padding: 0px 1vw;
+}
+
+#logo {
+    position: fixed;
+    top: -5px;
+    left: calc(50% - 200px);
+    z-index: 50;
+}
+
+#logo img {
+    max-width: 400px;
+    height: auto;
+}
+
+/* #logo h3 {
+    display: inline-flex;
+    color: rgb(139, 101, 2);
+} */
+
+#icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#icons i {
+    font-size: 22px;
+    padding: 0 2vw;
+}
+
+#cart-wrapper {
+    position: relative;
+    padding: 0 2vw;
+}
+
+#cart-wrapper i {
+    padding: 0;
+}
+
+#cart-count {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: -14px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main section */
+main {
+    width: 100%;
+    min-height: 80vh;
+    box-sizing: border-box;
+    margin-top: 150px;
+    /* padding-bottom: 8%; */
+}
+
+/* Footer section css */
+footer {
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 4% 8%;
+}
+
+footer>div {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+footer>div:first-of-type {
+    padding-left: 0;
+}
+
+.footer-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* icons */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.fa-user-circle-o {
+    font-size: 24px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 1.5vw;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* menu.css */
+
+/* Hide the burger menu initially */
+#burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+/* Style the burger icon */
+#burger-menu i {
+    font-size: 24px;
+}
+
+/* Show the menu items on hover for screens less than 1100px */
+@media (max-width: 1100px) {
+
+    #icons i {
+        font-size: 22px;
+        padding: 0 1vw;
+    }
+
+    #logo {
+        left: calc(50% - 150px);
+    }
+
+    #logo img {
+        max-width: 300px;
+    }
+
+    #burger-menu {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 2px 5px #ccc;
+        z-index: 10;
+    }
+
+    #menu a {
+        display: block;
+        padding: 12px 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* Style the dropdown links */
+    #menu a:hover {
+        background-color: #f1f1f1;
+    }
+}
+
+@media (max-width: 600px) {
+    #icons i {
+        font-size: 22px;
+        padding: 0 0.5vw;
+    }
+
+    #logo {
+        left: calc(50% - 150px);
+    }
+
+    #logo img {
+        max-width: 250px;
+    }
+
+}
