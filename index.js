@@ -58,7 +58,7 @@ $(document).ready(function () {
             } else {
                 accessoriesCards.innerHTML += `
                     <div class="card" id="${obj.id}">
-                        <a href="/product/details.html?p=${obj.id}">
+                        <a href="./product/details.html?p=${obj.id}">
                             <div class="preview-img">
                                 <img src="${obj.preview}" alt="Image${obj.id}">
                             </div>
